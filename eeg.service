@@ -1,0 +1,11 @@
+[Unit]
+Description=Start recording with Olimex EEG
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/eeg
+ExecStart=/home/pi/eeg/run_eeg.sh
+Restart=never
+
+[Install]
+WantedBy=multi-user.target
